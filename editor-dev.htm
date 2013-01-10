@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+        <title>FluxUI Builder</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
+        <link rel="stylesheet" media="screen" type="text/css" href="js/jquery.contextmenu.css" />
+        <link rel="stylesheet" media="screen" type="text/css" href="assets/jqueryui/jquery-ui-1.8.24.custom.css" />
+        
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.8.24.custom.min.js" type="text/javascript"></script>
+        <script src="colorpicker/js/colorpicker.js" type="text/javascript"></script>
+        <script src="js/jquery.contextmenu.js" type="text/javascript"></script>
+        <script src="js/jquery.fileupload.iframe.transport.js" type="text/javascript"></script>
+        <script src="js/jquery.fileupload.js" type="text/javascript"></script>
+        <script src="js/jquery.mousewheel.js" type="text/javascript"></script>
+        
+        <script src="js/fluxui_library/fluxui.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/core.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/events/dispatcher.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/color.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/style.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/timer.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/tween.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/state.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/loader.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/serialiser.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/selection.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/interaction.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/element.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/component.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/container.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/button.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/form/form.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/form/input.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/form/checkbox.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/form/dropdown.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/form/radiogroup.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/form/textarea.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/form/textfield.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/form/file.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/image.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/label.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/display/lists.js" type="text/javascript"></script>
+        
+        <script src="js/fluxui_library/fluxui/controls/view.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/menu.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/dialog.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/properties.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/breadcrumbs.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/statePanel.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/properties/propsheet.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/properties/container.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/properties/button.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/properties/image.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/properties/label.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/properties/stage.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/accordion.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/accordionPanel.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/colorpicker.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/gradientpicker.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/manipulator.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/alignment.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/library.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/components.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/controls/explorer.js" type="text/javascript"></script>
+        <script src="js/fluxui_library/fluxui/editor/editor.js" type="text/javascript"></script>
+        
+    </head>
+
+    <body>
+        <img src="assets/loading.gif" alt="Loading ..." height="32" width="32" style="position:absolute;top:50%;left:50%;margin:-16px 0 0 -16px" />
+        <div id="movie-container"></div>
+    </body>
+</html>

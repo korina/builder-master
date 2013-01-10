@@ -1,0 +1,166 @@
+
+section{
+    margin: 30px 0px 60px 0px;
+}
+
+/*---------------------------------------------------*/
+/* Twitter BootStrap Customisations */
+/*---------------------------------------------------*/
+    
+   .hero-unit {
+        padding: 30px;
+        margin-bottom: 0px;
+    }
+
+    .hero-unit h1 {
+        font-size: 40px;
+    }
+
+    .hero-unit .tagline {
+        font-size: 18px;
+    }
+
+
+    .hero-unit p {
+        font-size: 16px;
+        margin: 0 0 15px;
+    }
+
+/*---------------------------------------------------*/
+/* Form Validation */
+/*---------------------------------------------------*/
+    
+    form label.error{
+        color: #B94A48;
+    }
+
+    form input.error, textarea.error{
+        color: #B94A48;
+        border-color: #B94A48;
+        background-color: #feeaea;
+    }
+
+    form input.error::-webkit-input-placeholder { color: #B94A48; }
+    form textarea.error::-webkit-input-placeholder { color: #B94A48; }
+    form input.error::-moz-placeholder { color: #B94A48; }
+    form textarea.error::-moz-placeholder { color: #B94A48; }
+
+/*---------------------------------------------------*/
+/* Realtime Conversation stream */
+/*---------------------------------------------------*/
+
+	.commentForm {
+		padding: 10px
+	}
+
+	.commentForm p, .commentForm h3, .commentForm input, .commentForm button, .commentForm span {
+		float: left;
+		margin-right: 10px;
+	}
+
+	.commentForm .profile_pict {
+		float: right;
+		border: 4px solid white;
+	}
+
+	.commentForm #messageInput {
+		clear: left;
+	}
+
+	.commentForm span {
+		margin-right: 0px;
+	}
+
+	.logout {
+		margin-bottom: 0px !important;
+	}
+
+	.clear {
+		clear: both;
+		height: 1px;
+		margin: 0px !important;
+		padding: 0px 
+	}
+
+    .conversation {
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+        max-height: 800px;
+        overflow-y: auto;
+    }
+
+    .commentContainer {
+    	clear: left;
+    }
+
+    .commentContainer .profile-pict {
+    	float: left;
+    	margin: 6px 10px 0 0;
+		border: 4px solid white;
+    }
+
+    .commentContainer .arrow {
+    	float: left;
+    	margin: 25px 0 0 0;
+    }
+
+    .conversation .comment { 
+        margin: 6px 0 0 0;
+        background-color: #EEE;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        padding: 6px;
+        float: left;
+        max-width: 65%;
+    }
+
+    .conversation .comment .postmeta{
+        float:right;
+        margin:0 0 0 13px;
+        text-align:right;
+    }
+
+    .conversation .comment .postmeta span{
+        color:rgba(0,0,0,0.50);
+        font-size:12px;
+        line-height:19.5px;
+    }
+
+    .conversation .comment .postmeta span.time{
+        display:block;
+        color:rgba(0,0,0,0.34);
+    }
+
+    .conversation .comment .name{
+        color: black; 
+        font-size:14px;
+        font-weight: bold; 
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+    }
+
+    .conversation .comment .location{
+        margin-left:7px;
+        font-size:12px;
+        line-height:19.5px;
+        color:rgba(0,0,0,0.34);
+    }
+
+     .conversation .comment .message{
+        font-size:12px;
+        margin-bottom: 0px;
+    }
+
+    canvas {
+    	position: absolute;
+    	border: 1px solid lightgrey;
+    	border-radius: 4px;
+    	box-shadow: 4px 8px 4px lightgrey;
+    	margin-left: 0px !important;
+    }
+
+
+

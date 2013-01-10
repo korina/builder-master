@@ -1,0 +1,286 @@
+info: socket.io started
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized 2514084091754393003
+debug: setting request GET /socket.io/1/websocket/2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: client authorized for 
+debug: websocket writing 1::
+debug: broadcasting packet
+debug: websocket writing 5:::{"name":"message","args":[{"name":"James","timestamp":1337716693379,"location":"United Kingdom","message":"Hello"}]}
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+debug: emitting heartbeat for client 2514084091754393003
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 2514084091754393003
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 2514084091754393003
+debug: set heartbeat interval for client 2514084091754393003
+info: transport end (undefined)
+debug: set close timeout for client 2514084091754393003
+debug: cleared close timeout for client 2514084091754393003
+debug: cleared heartbeat interval for client 2514084091754393003
+debug: discarding transport
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized 1304624390131657024
+debug: setting request GET /socket.io/1/websocket/1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: client authorized for 
+debug: websocket writing 1::
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+debug: emitting heartbeat for client 1304624390131657024
+debug: websocket writing 2::
+debug: set heartbeat timeout for client 1304624390131657024
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client 1304624390131657024
+debug: set heartbeat interval for client 1304624390131657024
+info: transport end (undefined)
+debug: set close timeout for client 1304624390131657024
+debug: cleared close timeout for client 1304624390131657024
+debug: cleared heartbeat interval for client 1304624390131657024
+debug: discarding transport
+info: socket.io started

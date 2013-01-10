@@ -1,0 +1,57 @@
+
+    .conversation {
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+        max-height: 800px;
+        overflow-y: auto;
+    }
+
+    .commentContainer {
+    	font-family: 'Arial', 'Sans-serif';
+    	font-size: 12px;
+    	display: block;
+    	clear: both;
+    }
+
+    .commentContainer .profile-pict {
+    	float: left;
+    	margin: 4px 4px 0px 0px;
+		border: 4px solid white;
+		width: 48px;
+		height: 48px;
+    }
+
+    .commentContainer .arrow {
+    	float: left;
+    	margin-top: 4px;
+    }
+
+    .conversation .comment { 
+        margin: 4px 04px 0px 0px;
+        background-color: #EEE;
+        padding: 6px;
+        float: left;
+        max-width: 328px;
+    }
+
+    .conversation .comment .time{
+        margin-left: 8px;
+        margin-right: 8px;
+        color:rgba(0,0,0,0.5);
+    }
+
+    .conversation .comment .name{
+        color: black; 
+        font-weight: bold; 
+        margin-right: 8px;
+    }
+
+    .conversation .comment .location{
+        color:rgba(0,0,0,0.5);
+    }
+
+     .conversation .comment .message{
+        margin: 0px;
+    }
+

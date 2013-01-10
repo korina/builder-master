@@ -1,0 +1,178 @@
+diff --git a/.gitignore b/.gitignore
+old mode 100644
+new mode 100755
+index 37d5b5a..90e0e41
+--- a/.gitignore
++++ b/.gitignore
+@@ -50,4 +50,3 @@ js/fluxui_library/fluxui/state.js
+ js/fluxui_library/fluxui/style.js
+ js/fluxui_library/fluxui/timer.js
+ js/fluxui_library/fluxui/tween.js
+-
+diff --git a/js/fluxui_library/fluxui/controls/manipulator.js b/js/fluxui_library/fluxui/controls/manipulator.js
+index 0f2f41a..6ba9028 100644
+--- a/js/fluxui_library/fluxui/controls/manipulator.js
++++ b/js/fluxui_library/fluxui/controls/manipulator.js
+@@ -124,8 +124,7 @@
+ 			},
+ 			// Merge this method with update now we have multiadjust.
+ 			reset : function() {
+-				var i, trueLength = selection.sansTarget( 'overlay' ).length;
+-				for ( i = 0; i < 8; i++ ) {
++				for ( var i = 0; i < 8; i++ ) {
+ 					this.getChildById( 'handle_' + i ).$node().toggle( true );
+ 				}
+ 				this.update();
+@@ -143,11 +142,11 @@
+ 			// Looks for elements under the manipulator element that the user is trying
+ 			// to select, ignoring cases where a current target is already under the mouse.
+ 			lookUnder : function( $x, $y ) {
+-				var i, t = [], pos = [], matchingElement;
++				var i, t = [], pos = [], matchingElement, underneith;
+ 				for ( i = 0; i < selection.targets().length; i++ ) {
+ 					t.push( selection.targets()[i][0] );
+ 				}
+-				var underneith = this.comparePosition( t, $x, $y, 'overlay' );
++				underneith = this.comparePosition( t, $x, $y, 'overlay' );
+ 				if ( underneith == false ) {
+ 					matchingElement = this.comparePosition(
+ 						$( '[fluxid=stage]' ).children(), $x, $y, 'overlay' 
+@@ -160,7 +159,9 @@
+ 			},
+ 			// Compare a list of elements positions with a stated position.
+ 			comparePosition : function( $j, $x, $y, $ignore ) {
+-				var i, pos = [];
++				var i, pos = [],
++					s = 1 / ( ( types.editor ) ? types.editor.getInstance().stageScale : 1 ),
++					$x = $x * s, $y = $y * s;
+ 				for ( i = $j.length - 1; i >= 0; i-- ) {
+ 					if ( $( $j[i] ).attr( 'fluxid' ) != $ignore ) {
+ 						pos = this.truePosition( $j[i] );
+@@ -314,7 +315,7 @@
+ 						i.height( dim.h );
+ 					}
+ 				}
+-				// Advancing clockwise from top right.
++				// Representing buttons, advancing clockwise from the top right.
+ 				if ( id == 0 ) {
+ 					dim = set.x();
+ 					dim.w = set.width( dim.w ).w;
+diff --git a/js/fluxui_library/fluxui/controls/statePanel.js b/js/fluxui_library/fluxui/controls/statePanel.js
+index ee3bf34..e52214e 100644
+--- a/js/fluxui_library/fluxui/controls/statePanel.js
++++ b/js/fluxui_library/fluxui/controls/statePanel.js
+@@ -118,13 +118,11 @@
+ 			},
+ 			durationChange : function() {
+ 				var f = this.frameData(), t = parseInt( this.duration.text() );
+-				if ( f != null && !isNaN( t ) )
+-					f.duration = t;
++				if ( f != null && !isNaN( t ) ) f.duration = t;
+ 			},
+ 			easingChange : function() {
+ 				var f;
+-				if ( f = this.frameData() )
+-					f.easing = this.easing.value();
++				if ( f = this.frameData() ) f.easing = this.easing.value();
+ 			},
+ 
+ 			// Returns data for frames.
+@@ -134,8 +132,9 @@
+ 					k = f.keys, h;
+ 				if ( i > -1 ) {
+ 					h = f.hash[k[i]];
+-					if ( !h || !h.duration || !h.easing )
++					if ( !h || !h.duration || !h.easing ) {
+ 						h = f.hash[k[i]] = {duration: 300, easing: 'linearTween'};
++					}
+ 					return h;
+ 				}
+ 				return null;
+@@ -147,16 +146,16 @@
+ 				for ( i = 0; i < this.list.length(); i++ ) {
+ 					t = $(c[i]), l = t.text();
+ 					k.push( l );
+-					if ( !f.hash[l] )
+-						f.hash[l] = {};
++					if ( !f.hash[l] ) f.hash[l] = {};
+ 				}
+-				for ( i in f.hash )
++				for ( i in f.hash ) {
+ 					if ( f.hash.hasOwnProperty( i ) ) {
+ 						if ( k.indexOf( i ) == -1 ) {
+ 							delete t.hash[i];
+ 							t.hash[i] = null;
+ 						}
+ 					}
++				}
+ 			}
+ 		},
+ 		statics : {
+diff --git a/js/fluxui_library/fluxui/editor/editor.js b/js/fluxui_library/fluxui/editor/editor.js
+index 0156b61..e5c6e20 100644
+--- a/js/fluxui_library/fluxui/editor/editor.js
++++ b/js/fluxui_library/fluxui/editor/editor.js
+@@ -474,20 +474,17 @@ $(document).ready( function() {
+ 					} );
+ 					if ( !!name ) {
+ 						var p = json.movie.initial.props;
+-						eventDispatcher.dispatch(me,'events.stage.width.changed',me.stage.width( parseInt( p.width ) ));
+-						eventDispatcher.dispatch(me,'events.stage.height.changed',me.stage.height( parseInt( p.height ) ));
+-						eventDispatcher.dispatch(me,'events.stage.fill.changed',me.stage.height( p.fill ));
++						eventDispatcher.dispatch( me, 'events.stage.width.changed', me.stage.width( parseInt( p.width ) ) );
++						eventDispatcher.dispatch( me, 'events.stage.height.changed', me.stage.height( parseInt( p.height ) ) );
++						eventDispatcher.dispatch( me, 'events.stage.fill.changed', me.stage.height( p.fill ) );
+ 					}
+-					if ( !!f )
+-						me.stage.frames = types.core.clone( f );
++					if ( !!f ) me.stage.frames = types.core.clone( f );
+ 					me.statePanel.populate( me.stage );
+ 					eventDispatcher.dispatch( this, 'events.explorer.update' );
+ 				};
+ 				var list = types.loader.classesToLoad( json.movie );
+-				if ( list.length > 0 )
+-					types.loader.load( list, function() { process(); } );
+-				else
+-					process();
++				if ( list.length > 0 ) types.loader.load( list, function() { process(); } );
++				else process();
+ 			},
+ 			// For adding basic elements to the compositon on stage.
+ 			addElement : function( ns, select, origin, content ) {
+@@ -698,9 +695,10 @@ $(document).ready( function() {
+ 			},
+ 			selectAllItems : function() {
+ 				var c = this.currentItem.getChildren();
+-				for ( var i = 0; i < c.length; i++ )
++				for ( var i = 0; i < c.length; i++ ) {
+ 					selection.select( true, c[i].fluxid() );
+ 					//c[i].fui_select.apply( c[i].$node() );
++				}
+ 				this.manipulator.reset();
+ 				eventDispatcher.dispatch( this, 'events.stage.selectAll' );
+ 			},
+@@ -718,11 +716,8 @@ $(document).ready( function() {
+ 					if ( dir <= 0 && ni == 0 ) continue;
+ 					if ( dir > 0 && ni == p.children().length - 1 ) continue;
+ 					n.remove();
+-					if ( dir > 0 ) {
+-						n.insertAfter( p.children().get( ni ) );
+-					} else {
+-						n.insertBefore( p.children().get( ni-1 ) );
+-					}
++					if ( dir > 0 ) n.insertAfter( p.children().get( ni ) );
++					else n.insertBefore( p.children().get( ni-1 ) );
+ 					j.node = n.get(0);
+ 					n.data( 'currentInstance', j );
+ 					n.bind( 'click', j.fui_select );
+@@ -731,9 +726,7 @@ $(document).ready( function() {
+ 			applyContext : function( item ) {
+ 				var ed = this;
+ 				item.$node().get( 0 ).oncontextmenu = function() {
+-					if ( item != ed.manipulator ) {
+-						item.$node().trigger( 'click' );
+-					}
++					if ( item != ed.manipulator ) item.$node().trigger( 'click' );
+ 					return false;
+ 				};
+ 				

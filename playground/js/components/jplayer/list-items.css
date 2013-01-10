@@ -1,0 +1,12 @@
+.jp-playlist-item {
+	color : white;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: arial;
+}
+.jp-playlist-current div .jp-playlist-item, .jp-playlist-item:hover {
+	margin-left: 10px;
+}
+.jp-artist {
+	color: #ebebeb
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="assets/css/custom.css" rel="stylesheet">
+	</head>
+	<body>
+		<form class="commentForm">
+			<div class="messageGroup">
+				<div class="controls">
+					<input type="text" id="usernameInput" autocomplete="off" placeholder="Username">
+					<input type="text" id="pictInput" data-provide="typeahead" autocomplete="off" value="http://tinyurl.com/scroogepict">
+					<input type="text" id="locationInput" data-provide="typeahead" autocomplete="off" placeholder="Where in the world?">
+					<input minlength="2" maxlength="140" id="messageInput" placeholder="Type your message in 140 characters ...">
+				</div>
+			</div>
+			<input type="submit" id="commentButton" value="Comment">
+		</form>
+
+		<div id="conversationList" class="conversation">
+			<div class="comment">
+				<p class="message">No socket connexion</p>
+			</div>
+		</div>
+
+		<script src="assets/js/jquery-1.7.2.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="assets/js/jquery.timeago.js"></script>
+		<script src="assets/js/application.js"></script>
+
+	</body>
+</html>

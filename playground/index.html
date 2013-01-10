@@ -1,0 +1,181 @@
+<html>
+
+<head><title>Tutorial</title></head>
+        
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+	
+	<script src="js/fluxui_library/fluxui.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/core.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/events/dispatcher.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/color.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/style.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/timer.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/tween.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/state.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/loader.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/serialiser.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/selection.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/interaction.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/element.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/component.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/container.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/button.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/form/form.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/form/input.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/form/checkbox.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/form/dropdown.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/form/radiogroup.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/form/textarea.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/form/textfield.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/image.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/label.js" type="text/javascript"></script>
+	<script src="js/fluxui_library/fluxui/display/lists.js" type="text/javascript"></script>
+		
+	<script>
+		<!--
+		$(window).load( function() {
+			$('.fluxui_1').fluxui({
+                "movie": {
+                    "type": "display.element",
+                    "initial": {
+                        "props": {
+                            "width": "400",
+                            "height": "300"
+                        },
+                        "attr": {
+                            "id": "",
+                            "class": ""
+                        }
+                    },
+                    "states": {},
+                    "frames": {
+                        "keys": ["initial"],
+                        "hash": {
+                            "initial": {
+                                "duration": 300,
+                                "easing": "linearTween"
+                            }
+                        }
+                    },
+                    "behavior": {},
+                    "bind": {},
+                    "data": {},
+                    "children": {
+                        "keys": ["display.container_1", "display.container_2", "display.container_3"],
+                        "hash": {
+                            "display.container_1": {
+                                "type": "display.container",
+                                "initial": {
+                                    "props": {
+                                        "width": 100,
+                                        "height": 100,
+                                        "top": 14,
+                                        "left": 13,
+                                        "fill": {
+                                            "type": "solid",
+                                            "colors": [{
+                                                "rgb": "#55a60a",
+                                                "opacity": 1
+                                            }]
+                                        },
+                                        "border-color": "#000000"
+                                    },
+                                    "attr": {}
+                                },
+                                "states": {},
+                                "frames": {
+                                    "keys": ["initial", "isClicked1"],
+                                    "hash": {
+                                        "initial": {
+                                            "duration": 300,
+                                            "easing": "linearTween"
+                                        },
+                                        "isClicked1": {}
+                                    }
+                                },
+                                "behavior": {},
+                                "bind": {},
+                                "data": {}
+                            },
+                            "display.container_2": {
+                                "type": "display.container",
+                                "initial": {
+                                    "props": {
+                                        "width": 100,
+                                        "height": 100,
+                                        "top": 74,
+                                        "left": 210,
+                                        "fill": {
+                                            "type": "solid",
+                                            "colors": [{
+                                                "rgb": "#14a14c",
+                                                "opacity": 1
+                                            }]
+                                        },
+                                        "border-color": "#000000"
+                                    },
+                                    "attr": {}
+                                },
+                                "states": {},
+                                "frames": {
+                                    "keys": ["initial", "isClicked2"],
+                                    "hash": {
+                                        "initial": {
+                                            "duration": 300,
+                                            "easing": "linearTween"
+                                        },
+                                        "isClicked2": {}
+                                    }
+                                },
+                                "behavior": {},
+                                "bind": {},
+                                "data": {}
+                            },
+                            "display.container_3": {
+                                "type": "display.container",
+                                "initial": {
+                                    "props": {
+                                        "width": 100,
+                                        "height": 100,
+                                        "top": 147,
+                                        "left": 32,
+                                        "fill": {
+                                            "type": "solid",
+                                            "colors": [{
+                                                "rgb": "#1646a8",
+                                                "opacity": 1
+                                            }]
+                                        },
+                                        "border-color": "#000000"
+                                    },
+                                    "attr": {}
+                                },
+                                "states": {},
+                                "frames": {
+                                    "keys": ["initial", "isClicked3"],
+                                    "hash": {
+                                        "initial": {
+                                            "duration": 300,
+                                            "easing": "linearTween"
+                                        },
+                                        "isClicked3": {}
+                                    }
+                                },
+                                "behavior": {},
+                                "bind": {},
+                                "data": {}
+                            }
+                        }
+                    }
+                },
+                "assets": {}
+}
+			);
+		} );
+		//-->
+	</script>	
+<body>
+	<div class="fluxui_1"></div>
+</body>
+</html>

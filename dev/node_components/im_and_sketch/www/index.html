@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	
+
+	<head>
+			<meta charset="utf-8">
+			<title>Sample Application powered by Node.JS</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="">
+			<meta name="author" content="">
+			<link href="assets/css/bootstrap.css" rel="stylesheet">
+			<link href="assets/css/custom.css" rel="stylesheet">
+			<style type="text/css">
+				body { 
+					padding-top: 60px; 
+					padding-bottom: 40px;
+				}
+			</style>
+			<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+			<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+			<!--[if lt IE 9]>
+					<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+			<link rel="shortcut icon" href="assets/ico/favicon.ico">
+			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+			<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	</head>
+
+
+	<body>
+	
+		<!-- Application Navigation Bar -->		
+
+					<div class="navbar navbar-fixed-top">
+						<div class="navbar-inner">
+							<div class="container">
+								<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</a>
+							<a class="brand" href="#">NodeCloud.io</a>
+							<div class="nav-collapse">
+								<ul class="nav"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+		<!-- Main Application Content -->		
+
+				<div class="container">
+
+					<div class="row">
+						<span class="control-group nameGroup">
+							<a href="/twitter"><img src="https://dev.twitter.com/sites/default/files/images_documentation/sign-in-with-twitter_0.png" class="span3" alt="Login with Twitter"></a>
+							<p id="loginerror" style="color:red; clear:both"></p>
+						</span>
+						<form class="commentForm hero-unit">
+							<img src="https://si0.twimg.com/profile_images/67134012/1971-toon-humbug-scrooge_normal.jpg" alt="[Profile picture]" class="profile_pict">
+							<h3 id="loggedin"></h3>
+							<div class="control-group messageGroup">
+								<div class="controls">
+									<input type="text" class="span3 required" id="locationInput" data-provide="typeahead" autocomplete="off"placeholder="Where in the world?">
+									<input class="span8 required" minlength="2" maxlength="140" id="messageInput" placeholder="Type your message in 140 characters ...">
+								</div>
+							</div>
+							<button type="submit" id="commentButton" class="btn" data-loading-text="Connecting...">
+								<i class="icon-comment"></i>
+							</button>
+							<p class="logout"><a href="/logout">Logout</a></p>
+							<span>Tweet? &nbsp;</span><input type="checkbox" class="tweet" id="tweet">
+							<div class="clear">&nbsp;</div>
+						</form>
+					</div>
+					<div class="row">&nbsp;</div>
+					<div class="row">
+						<div class="span5">
+							<div id="conversationList" class="conversation" style="clear:both">
+								<div class="comment noMessages">
+									<p class="message">There are currently no messages</p>
+								</div>
+							</div>
+						</div>
+						<div id="canvasContainer" class="span7">
+							<h2>Shared Whiteboard</h2>
+							<canvas id="imageView" height="720px" width="640px"></canvas>
+						</div>
+					</div>
+				</div> <!-- /container -->
+
+		<!-- Connection Modal Dialog Box -->
+					
+				<div id="connectionModal" class="modal hide fade" style="display: none; ">
+						
+						<div class="modal-header">
+							<h3>Connecting..</h3>
+						</div>
+
+						<div class="modal-body">
+							<p>Please wait wile we connect you to the server...</p>
+						</div>
+						<div class="modal-footer">
+						</div>
+					</div>
+
+
+
+
+		<!-- Twitter Bootstrap (JavaScript) -->
+			<script src="assets/js/jquery-1.7.2.min.js"></script>
+			<script src="assets/js/bootstrap.js"></script>
+
+		<!-- Application (JavaScript) --> 
+			<script src="/socket.io/socket.io.js"></script>
+			<script src="assets/js/jquery.validate.min.js"></script>
+			<script src="assets/js/jquery.timeago.js"></script>
+			<script src="assets/js/application.js"></script>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,18 @@
+.jp-playlist-ul li {
+	display : block;
+	font-family : arial;
+	font-size : 14px;
+	margin-top : 2px;
+	background : rgba(50,50,50,0.4)
+}
+.jp-playlist-ul li a {
+	display : block;
+	padding : 13px 20px 13px 20px;
+	text-decoration : none;
+	color : #dd00aa;
+	width : 100%
+}
+.jp-playlist-current { padding-left : 10px }
+.jp-artist { font-size : 11px }
+.jp-playlist-ul li:hover { background : rgba(50,50,50,0.8) }
+
