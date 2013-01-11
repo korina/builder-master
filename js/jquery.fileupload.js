@@ -143,7 +143,7 @@
                 data.submit();
             },
 
-            // Other callbacks: test
+            // Other callbacks:
             // Callback for the submit event of each file upload:
             // submit: function (e, data) {}, // .bind('fileuploadsubmit', func);
             // Callback for the start of each file upload request:
